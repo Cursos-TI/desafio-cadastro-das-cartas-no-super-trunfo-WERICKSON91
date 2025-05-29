@@ -1,0 +1,86 @@
+#include <stdio.h>
+
+// Desafio Super Trunfo - Países
+// Tema 1 - Cadastro das Cartas
+
+int main() {
+    // Declaração de variáveis para a primeira cidade
+    char codigo1[10], nome1[50], estado1[3];
+    int populacao1, pontosTuristicos1;
+    float area1, pib1;
+
+    // Declaração de variáveis para a segunda cidade
+    char codigo2[10], nome2[50], estado2[3];
+    int populacao2, pontosTuristicos2;
+    float area2, pib2;
+
+    // Entrada de dados para a primeira cidade
+    printf("Cadastro da carta 1:\n");
+
+    printf("Estado (RJ): ");
+    scanf("%s", estado1);
+
+    printf("Código da cidade: A01");
+    scanf("%s", codigo1);
+
+    printf("Nome da cidade: São Paulo");
+    scanf(" %[^\n]", nome1); // Lê strings com espaços
+
+    printf("População: 3000000");
+    scanf("%d", &populacao1);
+
+    printf("Área (km²): 300");
+    scanf("%f", &area1);
+
+    printf("PIB (em bilhões de reais): 400000000");
+    scanf("%f", &pib1);
+
+    printf("Número de pontos turísticos: 102");
+    scanf("%d", &pontosTuristicos1);
+
+    // Entrada de dados para a segunda cidade
+    printf("\nCadastro da carta 2:\n");
+
+    printf("Estado (SP): ");
+    scanf("%s", estado2);
+
+    printf("Código da cidade: B01");
+    scanf("%s", codigo2);
+
+    printf("Nome da cidade: Rio de Janeiro");
+    scanf(" %[^\n]", nome2);
+
+    printf("População: 2000000");
+    scanf("%d", &populacao2);
+
+    printf("Área (km²): 150");
+    scanf("%f", &area2);
+
+    printf("PIB (em bilhões de reais): 25000000");
+    scanf("%f", &pib2);
+
+    printf("Número de pontos turísticos: 115");
+    scanf("%d", &pontosTuristicos2);
+
+    // Exibição dos dados cadastrados
+    printf("\n--- Carta 1 ---\n");
+    printf("Estado: %s\n", estado1);
+    printf("Código: %s\n", codigo1);
+    printf("Cidade: %s\n", nome1);
+    printf("População: %d\n", populacao1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Número de pontos turísticos: %d\n", pontosTuristicos1);
+
+    printf("\n--- Carta 2 ---\n");
+    printf("Estado: %s\n", estado2);
+    printf("Código: %s\n", codigo2);
+    printf("Cidade: %s\n", nome2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
+    printf("Número de pontos turísticos: %d\n", pontosTuristicos2);
+
+    return 0;
+
+
